@@ -1,0 +1,15 @@
+public class fibonacci {
+
+        public static void main(String[] args) {
+
+            int n = 100, s1 = 0, s2 = 1;
+            System.out.print("Upto " + n + ": ");
+            while (s1<= n)
+            {
+                System.out.print(s1 + " + ");
+                int sum = s1 + s2;
+                s1 = s2;
+                s2 = sum;
+            }
+        }
+    }
